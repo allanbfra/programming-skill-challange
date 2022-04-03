@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 @SpringBootApplication
 public class Application {
 	private static final Logger LOGGER = Logger.getLogger(Application.class.getName());
-	
+
 	public static void main(String[] args) {
 		SecondQuestion.execute();
 		LOGGER.info("TenthQuestion: " + TenthQuestion.reverseString("allan"));
