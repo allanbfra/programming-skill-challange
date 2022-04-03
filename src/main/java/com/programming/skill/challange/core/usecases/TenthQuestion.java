@@ -10,8 +10,6 @@ public class TenthQuestion {
             string += string.charAt(i);
         }
 
-        LOGGER.info("String: " + string);
-
         return string.substring(string.length()/2);
     }
 }
