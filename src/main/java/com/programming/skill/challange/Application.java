@@ -1,5 +1,6 @@
 package com.programming.skill.challange;
 
+import com.programming.skill.challange.core.usecases.NinthQuestion;
 import com.programming.skill.challange.core.usecases.SecondQuestion;
 import com.programming.skill.challange.core.usecases.TenthQuestion;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +13,10 @@ public class Application {
 
 	public static void main(String[] args) {
 		SecondQuestion.execute();
-		LOGGER.info("TenthQuestion: " + TenthQuestion.reverseString("allan"));
+		int stringLength = NinthQuestion.calculateStringLength("should be 12");
+		String reversedString = TenthQuestion.reverseString("allan");
+		LOGGER.info("\nNinthQuestion: " + stringLength +
+				"\nTenthQuestion: " + reversedString);
 	}
 
 }

@@ -1,7 +1,7 @@
 package com.programming.skill.challange.core.usecases;
 
-public class NinethQuestion {
-    public int calculateStringLength(String string){
+public class NinthQuestion {
+    public static int calculateStringLength(String string){
         int length=0;
         char[] charArray = string.toCharArray();
 
